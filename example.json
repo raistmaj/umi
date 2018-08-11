@@ -1,0 +1,74 @@
+{
+  "model": {
+    "operations": [
+      {
+        "name": "operation1",
+        "request": {
+          "name": "operation1request"
+        },
+        "response": {
+          "name": "operation1response"
+        },
+        "exceptions" : [
+
+        ]
+      }
+    ],
+    "types": [
+      {
+        "name": "operation1request",
+        "members": [
+          {
+            "name": "member1",
+            "type": "integer",
+            "optional": true,
+            "filter": {
+              "min": 0,
+              "max": 200
+            }
+          },
+          {
+            "name": "member2",
+            "type": "double",
+            "filter": {
+              "min": -1,
+              "max": 300
+            }
+          },
+          {
+            "name": "member3",
+            "type": "string",
+            "filter": {
+              "regex": ""
+            }
+          },
+          {
+            "name": "member4",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "name": "operation1response",
+        "members": [
+          {
+            "name": "member1",
+            "type": "integer"
+          },
+          {
+            "name": "member2",
+            "type": "double"
+          },
+          {
+            "name": "member3",
+            "type": "string"
+          },
+          {
+            "name": "member4",
+            "type": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}
